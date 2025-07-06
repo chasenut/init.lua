@@ -52,7 +52,11 @@ vim.keymap.set("n", "<C-j>", function() require("harpoon.ui").nav_file(2) end)
 vim.keymap.set("n", "<C-k>", function() require("harpoon.ui").nav_file(3) end)
 vim.keymap.set("n", "<C-l>", function() require("harpoon.ui").nav_file(4) end)
 
-
+vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+vim.keymap.set("n", "<M-h>", "<cmd>silent !tmux neww tmux-sessionizer -s 0<CR>")
+vim.keymap.set("n", "<M-j>", "<cmd>silent !tmux neww tmux-sessionizer -s 1<CR>")
+vim.keymap.set("n", "<M-k>", "<cmd>silent !tmux neww tmux-sessionizer -s 2<CR>")
+vim.keymap.set("n", "<M-l>", "<cmd>silent !tmux neww tmux-sessionizer -s 3<CR>")
 
 vim.keymap.set("n", "<leader>st", function()
     local file_dir = vim.fn.expand("%:p:h")
