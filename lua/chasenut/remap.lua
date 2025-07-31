@@ -7,6 +7,9 @@ vim.keymap.set("", "<down>", "<nop>")
 vim.keymap.set("", "<right>", "<nop>")
 vim.keymap.set("", "<left>", "<nop>")
 
+-- Disable sending ctrl-z signal (in zsh it closes neovim)
+vim.keymap.set("n", "<C-z>", "<nop>")
+
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
