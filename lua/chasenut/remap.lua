@@ -47,6 +47,14 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 -- Makes current file executable (for scripts etc.)
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
+-- Quickfix nav
+-- tip for future me: "grr" adds all references to quickfix
+vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
+vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
+-- Location list nav
+vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
+vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
+
 -- Harpoon
 vim.keymap.set("n", "<leader>a", function() require("harpoon.mark").add_file() end)
 vim.keymap.set("n", "<C-e>", function() require("harpoon.ui").toggle_quick_menu() end)
