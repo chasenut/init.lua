@@ -30,8 +30,8 @@ return {
                     --documentation = cmp.config.window.bordered(),
                 },
                 mapping = cmp.mapping.preset.insert({
-                    --['<C-b>'] = cmp.mapping.scroll_docs(-4),
-                    --['<C-f>'] = cmp.mapping.scroll_docs(4),
+                    ['<C-b>'] = cmp.mapping.scroll_docs(-4),
+                    ['<C-f>'] = cmp.mapping.scroll_docs(4),
                     ['<C-e>'] = cmp.mapping.abort(),
                     ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
                     ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
