@@ -43,3 +43,12 @@ vim.diagnostic.config({
   update_in_insert = true,    -- update diagnostics while typing
   severity_sort = false,
 })
+
+-- Enable relative line numbers in netrw
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "netrw",
+  callback = function()
+    vim.opt_local.number = true
+    vim.opt_local.relativenumber = true
+  end,
+})

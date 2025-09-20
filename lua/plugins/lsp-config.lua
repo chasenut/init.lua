@@ -18,6 +18,7 @@ return {
                     "ts_ls",
                     "pyright",
                     "gopls",
+                    "sqls",
                 }
             })
         end
@@ -36,6 +37,7 @@ return {
             lspconfig.ts_ls.setup({ capabilities = capabilities })
             lspconfig.pyright.setup({ capabilities = capabilities })
             lspconfig.gopls.setup({ capabilities = capabilities })
+            lspconfig.sqls.setup({ capabilities = capabilities })
 
             vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
             vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
