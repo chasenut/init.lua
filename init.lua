@@ -18,8 +18,6 @@ require("lazy").setup({
     change_detection = { notify = false }
 })
 
-
-
 local augroup = vim.api.nvim_create_augroup
 --local chasenutGroup = augroup('chasenut', {})
 

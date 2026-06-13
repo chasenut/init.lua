@@ -1,12 +1,3 @@
--- No need for mouse
-vim.opt.mouse = ""
-vim.opt.mousescroll = "ver:0,hor:0"
--- Throw away that arrows keys, use homerow
-vim.keymap.set("", "<up>", "<nop>")
-vim.keymap.set("", "<down>", "<nop>")
-vim.keymap.set("", "<right>", "<nop>")
-vim.keymap.set("", "<left>", "<nop>")
-
 -- Disable sending ctrl-z signal (in zsh it closes neovim)
 vim.keymap.set("n", "<C-z>", "<nop>")
 

@@ -41,13 +41,19 @@ return {
                 sources = cmp.config.sources({
                     { name = 'nvim_lsp' },
                     { name = 'luasnip' },
+                    { name = "buffer" },
                     { name = "vim-dadbod-completion" },
-                }, {
-                        { name = 'buffer' },
-                    }),
+                }),
                 completion = {
                     --autocomplete = false, -- prevents auto-popups of comoletions menu
                 }
+            })
+            -- Setup up vim-dadbod
+            cmp.setup.filetype({ "sql" }, {
+                sources = {
+                    { name = "buffer" },
+                    { name = "vim-dadbod-completion" },
+                },
             })
             vim.diagnostic.config({
                 -- update_in_insert = true,

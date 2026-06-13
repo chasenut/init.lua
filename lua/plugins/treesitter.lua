@@ -20,7 +20,8 @@ return {
                     "lua",
                     "bash",
                     "java",
-                    "go"
+                    "go",
+                    "sql"
                 },
 
                 -- Install parsers synchronously (only applied to `ensure_installed`)
