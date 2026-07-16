@@ -34,4 +34,3 @@ autocmd('TextYankPost', {
         })
     end,
 })
-
